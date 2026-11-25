@@ -172,6 +172,9 @@
   <ItemGroup>
     <Compile Include="*.cs" />
     <Compile Include="Properties\*.cs" />
+    <Compile Include="IGIEditor\Core\*.cs" />
+    <Compile Include="IGIEditor\QMissionTriggers.cs" />
+    <Compile Include="IGIEditor\TriggerToolkitControl.cs" />
   </ItemGroup>
 
   <ItemGroup>

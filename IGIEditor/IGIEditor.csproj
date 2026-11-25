@@ -197,6 +197,13 @@
     <Compile Include="QWeapon.cs" />
     <Compile Include="QZip.cs" />
     <Compile Include="QZipStorer.cs" />
+    <Compile Include="Core\QScriptDocument.cs" />
+    <Compile Include="Core\MissionTriggerExpression.cs" />
+    <Compile Include="Core\MissionTriggerCompiler.cs" />
+    <Compile Include="Core\TriggerCatalog.cs" />
+    <Compile Include="Core\ObjectCustomizer.cs" />
+    <Compile Include="QMissionTriggers.cs" />
+    <Compile Include="TriggerToolkitControl.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

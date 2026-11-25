@@ -96,6 +96,9 @@ You can also **Upload** or **Download** new missions from _Server_ and load into
 
 ![](https://raw.githubusercontent.com/Jones-HM/project-igi-toolkit/refs/heads/develop/IGIEditor/resources/mission_toolkit.png)
 
+### Triggers & Objects ToolKit
+**Triggers & Objects ToolKit**: Configures mission **success/failure triggers** (LevelFlow and aggregate failure StatusMessage) from presets such as *Jones steals the truck and escapes the base*, *Harrison's man killed* or *Priboi's limo destroyed*, or from custom boolean expressions. It also edits **extended object properties by name** (from `Task_DeclareParameters`) instead of hard-coded argument offsets, including sound and door expressions. See [the feature guide](docs/TRIGGERS_AND_OBJECT_CUSTOMIZATION.md).
+
 ### Position ToolKit
 **Position ToolKit**: Lets you to `Update` or `Reset` `Positions` and `Orientation` of Game objects and Humanplayer you can Rotate them to `180` degree or move them to different location easily.</br>
 

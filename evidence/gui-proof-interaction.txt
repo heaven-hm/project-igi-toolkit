@@ -1,0 +1,8 @@
+GUI / CDP interaction proof
+Initial status: Status: idle
+After clicking Apply LevelFlow + Apply property edits:
+STATUS: PASS - Car 1099 model and open-door expression applied.
+Success trigger rows: 2
+Failure trigger rows: 3
+Generated LevelFlow: Task_New(10, "LevelFlow", "", 0, 0, 0, 0, 0, 0, 0, "EditVariable_199.nValue == 1 && CutScene_1204.isFinished", "StatusMessage_1391.isSendt", TRUE, 300)
+Verdict: PASS

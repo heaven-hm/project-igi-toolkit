@@ -1,5 +1,10 @@
 # 📝 CHANGELOGS
 
+## Unreleased — Triggers & Objects ToolKit
+- 🎯 Added configurable mission success/failure triggers with LevelFlow + aggregate failure StatusMessage generation and retail-grounded presets.
+- 🧱 Added extended object customization by parameter name with byte-preserving QSC edits and type validation.
+- 🧪 Added a portable core test suite (54 assertions) and a Chrome DevTools GUI proof harness.
+
 ## Version 0.8.7.6 BETA 🎉  
 - 🔧 **Fixed AI Patrol Path Variable Replacement** - Resolved issue where variables `x`, `y`, `z`, `a` were not being replaced with actual node IDs when graph had fewer nodes than variables.
 - 🔄 **Enhanced Level Change UI Refresh** - Improved UI component refresh when changing levels, ensuring graph images and dropdowns update properly.
