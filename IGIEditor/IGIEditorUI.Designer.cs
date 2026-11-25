@@ -224,6 +224,8 @@ namespace IGIEditor
             this.weaponNameTxt = new System.Windows.Forms.TextBox();
             this.updateWeaponPropertiesBtn = new System.Windows.Forms.Button();
             this.threeDEditor = new System.Windows.Forms.TabPage();
+            this.start3DEditorBtn = new System.Windows.Forms.Button();
+            this.resume3DEditorBtn = new System.Windows.Forms.Button();
             this.updateTerrainHeightBtn = new System.Windows.Forms.Button();
             this.terrainHeightVal = new System.Windows.Forms.NumericUpDown();
             this.terrainLabel = new System.Windows.Forms.Label();
@@ -3438,9 +3440,27 @@ namespace IGIEditor
             this.updateWeaponPropertiesBtn.UseVisualStyleBackColor = true;
             this.updateWeaponPropertiesBtn.Click += new System.EventHandler(this.updateWeaponPropertiesBtn_Click);
             // 
+            // start3DEditorBtn
+            this.start3DEditorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.start3DEditorBtn.Location = new System.Drawing.Point(137, 101);
+            this.start3DEditorBtn.Name = "start3DEditorBtn";
+            this.start3DEditorBtn.Size = new System.Drawing.Size(200, 33);
+            this.start3DEditorBtn.TabIndex = 23;
+            this.start3DEditorBtn.Text = "Start 3D Editor";
+            this.start3DEditorBtn.UseVisualStyleBackColor = true;
+            // resume3DEditorBtn
+            this.resume3DEditorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.resume3DEditorBtn.Location = new System.Drawing.Point(343, 101);
+            this.resume3DEditorBtn.Name = "resume3DEditorBtn";
+            this.resume3DEditorBtn.Size = new System.Drawing.Size(200, 33);
+            this.resume3DEditorBtn.TabIndex = 22;
+            this.resume3DEditorBtn.Text = "Resume 3D Editor";
+            this.resume3DEditorBtn.UseVisualStyleBackColor = true;
             // threeDEditor
             // 
             this.threeDEditor.BackColor = System.Drawing.SystemColors.Control;
+            this.threeDEditor.Controls.Add(this.start3DEditorBtn);
+            this.threeDEditor.Controls.Add(this.resume3DEditorBtn);
             this.threeDEditor.Controls.Add(this.updateTerrainHeightBtn);
             this.threeDEditor.Controls.Add(this.terrainHeightVal);
             this.threeDEditor.Controls.Add(this.terrainLabel);
@@ -6257,6 +6277,8 @@ namespace IGIEditor
         private System.Windows.Forms.TabPage objectEditor;
         private System.Windows.Forms.TabPage humanEditor;
         private System.Windows.Forms.TabPage threeDEditor;
+        private System.Windows.Forms.Button start3DEditorBtn;
+        private System.Windows.Forms.Button resume3DEditorBtn;
         private System.Windows.Forms.TabPage missionEditor;
         private System.Windows.Forms.TabPage positionEditor;
         private System.Windows.Forms.Button removeModelBtn;
