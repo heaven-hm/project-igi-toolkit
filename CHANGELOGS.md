@@ -1,5 +1,10 @@
 # 📝 CHANGELOGS
 
+## Unreleased
+- 🏔️ Added a native 3D Terrain ToolKit behind the existing **3D Toolkit** tab: shaded orbitable height-map preview, raise/lower/smooth brushes, PGM/RAW import/export and byte-preserving `terrain.hmp` load/save.
+- 🧪 Added portable terrain-core unit tests and a headless `terrain-cli` for round-trip, render and sculpt verification.
+- 📚 Documented the IGI `.hmp` encoding and the remaining acceptance gaps in `docs/terrain-editor.md`.
+
 ## Version 0.8.7.6 BETA 🎉  
 - 🔧 **Fixed AI Patrol Path Variable Replacement** - Resolved issue where variables `x`, `y`, `z`, `a` were not being replaced with actual node IDs when graph had fewer nodes than variables.
 - 🔄 **Enhanced Level Change UI Refresh** - Improved UI component refresh when changing levels, ensuring graph images and dropdowns update properly.

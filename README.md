@@ -120,6 +120,9 @@ You can also **Upload** or **Download** new missions from _Server_ and load into
 ### Graph & Links - Level 1. ( IGI 2 ToolKit).
 ![](https://i.ibb.co/gR1vZSM/IGI2-Graph-Nodes.png)
 
+### Terrain ToolKit (3D):
+**Terrain ToolKit**: Opens from the **3D Toolkit** tab (`Start 3D Editor` / `Resume 3D Editor`). It displays an orbitable shaded 3D height map and provides raise, lower and smooth brushes, with PGM/RAW import/export and native `terrain.hmp` open/save. The `.hmp` reader/writer preserves all 256 slots byte-for-byte. See [docs/terrain-editor.md](docs/terrain-editor.md) for the format, controls and current limitations.
+
 ### Misc ToolKit:
 **Misc toolkit**: Lets you to `Reset/Remove` levels back to normal and `Remove Cutscenes`, Export level data,Set Game Frames `FPS` Update Game Music and more.</br>
 
