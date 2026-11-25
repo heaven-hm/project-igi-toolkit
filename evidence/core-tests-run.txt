@@ -1,0 +1,61 @@
+IGI Toolkit core tests
+QSC bytes: 174938
+------------------------------------------------------------
+PASS  found HumanSoldier 4023
+PASS  nested HumanAI 3201 parsed
+PASS  StatusMessage 1391 parsed
+PASS  multi-line condition preserved in argument
+PASS  Car declaration exists
+PASS  Car declaration has 13 parameters
+PASS  Car model parameter name
+PASS  Car model width is one
+PASS  success read
+PASS  failure read
+PASS  position args are seven
+PASS  timer disabled in retail script
+PASS  grouping round-trip
+PASS  precedence round-trip
+PASS  negation round-trip
+PASS  newline normalisation
+PASS  three leaves collected
+PASS  single & rejected
+PASS  empty leaf rejected
+PASS  object apply succeeded
+PASS  new model in task
+PASS  bool written as FALSE
+PASS  line count unchanged
+PASS  exactly one line changed
+PASS  unknown property rejected
+PASS  multi-value width validated
+PASS  numeric value validated
+PASS  second apply is a no-op
+PASS  task type
+PASS  success expression
+PASS  failure expression
+PASS  timer enabled
+PASS  first position argument preserved
+PASS  status message regenerated
+PASS  failure expression moved to status message
+PASS  LevelFlow listens to status message
+PASS  first StatusMessage 4010 untouched
+PASS  only one LevelFlow task
+PASS  truck success flag
+PASS  truck success cutscene
+PASS  truck failure
+PASS  driver failure
+PASS  ally fallback noted
+PASS  ally failure expression
+PASS  limo success
+PASS  script-specific source discovered
+PASS  truck source discovered
+PASS  built-in source included
+PASS  LevelFlow appended when missing
+PASS  one LevelFlow after append
+PASS  object customization succeeded after trigger apply
+PASS  LevelFlow present
+PASS  customized model present
+PASS  failure message rewritten
+------------------------------------------------------------
+TOTAL: 54 passed, 0 failed
+Evidence written to /Users/haseeb-mir/igi-toolkit-issues12-15-work/evidence/core-tests.txt
+GUI proof written to /Users/haseeb-mir/igi-toolkit-issues12-15-work/tools/gui-proof/preview.html

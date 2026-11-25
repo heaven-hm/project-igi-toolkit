@@ -143,6 +143,11 @@ namespace IGIEditor
                 InitEditorApp();
                 InitEditorPaths(gameLevel);
 
+                // Trigger Toolkit + extended object customization (issues #12/#15).
+                var triggerToolkitTab = new TabPage("Triggers & Objects") { Name = "triggersEditor" };
+                triggerToolkitTab.Controls.Add(new TriggerToolkitControl());
+                editorTabs.TabPages.Add(triggerToolkitTab);
+
                 if (QMemory.FindGame())
                 {
                     QUtils.gameFound = true;
