@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>terrain-cli</AssemblyName>
+    <RollForward>LatestMajor</RollForward>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../IGIEditor/QTerrainCore.cs" Link="QTerrainCore.cs" />
+    <Compile Include="../../IGIEditor/QTerrainTools.cs" Link="QTerrainTools.cs" />
+    <Compile Include="../../IGIEditor/QTerrainView.cs" Link="QTerrainView.cs" />
+  </ItemGroup>
+</Project>
