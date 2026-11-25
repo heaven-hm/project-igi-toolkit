@@ -74,18 +74,15 @@ namespace IGIEditor
                 GAME_MAX_LEVEL = 14;
                 versionLbl.Text = "DEV";
                 editorTabs.TabPages.RemoveByKey("objectEditor");
-                editorTabs.TabPages.RemoveByKey("threeDEditor");
 #elif DEBUG
                 //appSupportBtn.Visible = false;
                 GAME_MAX_LEVEL = 14;
                 versionLbl.Text = "DBG";
-                editorTabs.TabPages.RemoveByKey("threeDEditor");
                 editorTabs.TabPages.RemoveByKey("devMode");
                 editorTabs.TabPages.RemoveByKey("objectEditor");
                 gameItemsLbl.Visible = true;
 #else
                 GAME_MAX_LEVEL = 14;
-                editorTabs.TabPages.RemoveByKey("threeDEditor");
                 editorTabs.TabPages.RemoveByKey("objectEditor");
                 versionLbl.Text = appEditorSubVersion;
                 editorTabs.TabPages.RemoveByKey("devMode");
@@ -236,11 +233,41 @@ namespace IGIEditor
                 enableTimers(QUtils.gameFound);
                 //Delete previous Updater from Cache.
                 QUtils.DirectoryIODelete(QUtils.editorUpdaterAbsDir);
+
+                //Terrain ToolKit - the 3D Toolkit tab is always available now.
+                start3DEditorBtn.Click += delegate(object sender, EventArgs e) { OpenTerrainEditor(false); };
+                resume3DEditorBtn.Click += delegate(object sender, EventArgs e) { OpenTerrainEditor(true); };
             }
             catch (Exception ex)
             {
                 QLog.ShowException(MethodBase.GetCurrentMethod().Name, ex);
                 Environment.Exit(0);
+            }
+        }
+
+        private void OpenTerrainEditor(bool openExistingFile)
+        {
+            try
+            {
+                string existingPath = null;
+                if (openExistingFile)
+                {
+                    OpenFileDialog dialog = new OpenFileDialog();
+                    dialog.Filter = "IGI height map|terrain.hmp|All files|*.*";
+                    dialog.Title = "Open terrain.hmp";
+                    if (dialog.ShowDialog(this) != DialogResult.OK) return;
+                    existingPath = dialog.FileName;
+                }
+
+                using (QTerrainEditorForm terrainForm = new QTerrainEditorForm())
+                {
+                    if (existingPath != null) terrainForm.LoadFile(existingPath);
+                    terrainForm.ShowDialog(this);
+                }
+            }
+            catch (Exception ex)
+            {
+                QLog.LogException("TERRAIN", ex);
             }
         }
 
