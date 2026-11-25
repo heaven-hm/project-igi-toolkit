@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <RollForward>LatestMajor</RollForward>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- The portable core is shared with the .NET Framework WinForms application. -->
+    <Compile Include="../../IGIEditor/QTerrainCore.cs" Link="QTerrainCore.cs" />
+    <Compile Include="../../IGIEditor/QTerrainTools.cs" Link="QTerrainTools.cs" />
+    <Compile Include="../../IGIEditor/QTerrainView.cs" Link="QTerrainView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+</Project>
